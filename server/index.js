@@ -25,7 +25,7 @@ app.use('/',DATArouter)
 connection().then(() => {
     app.listen(PORT, () => {
       console.log(`Server running at http://localhost:${PORT}`);
-      getCompanyData();
+      //getCompanyData();
 
     });
   });
