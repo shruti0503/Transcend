@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     setAuthStatus({ isSignedIn, user });
     if (!isSignedIn) {
-      router.push('/sign-in'); 
+      router.push('/sign-up'); 
     }
   }, [isSignedIn, user, router]);
 
