@@ -19,7 +19,11 @@ app.use(cors());
 
 
 
-app.use('/',DATArouter)
+// app.use('/',DATArouter)
+
+app.get('/',(req,res)=>{
+  res.json("hello")
+})
 
 
 connection().then(() => {
