@@ -14,7 +14,7 @@ const apiClient = axios.create({
 
 export const getInfo = async () => {
     try {
-      const response = await _get(`/get-data`);
+      const response = await _get(`${process.env.BACKEND_URL}/get-data`);
       console.log("Data is", response.data);
       return response.data;
     } catch (error) {
