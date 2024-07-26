@@ -16,7 +16,7 @@ This project is a full-stack web application that includes a login page, a home 
 
 - **frontend**: Contains the Next.js frontend code.
 - **backend**: Contains the Express backend code.
-- **database**: Contains the MongoDB DDL/DML scripts and CSV data.
+- **database**:  MongoDB Connection.
 
 ## Frontend
 
