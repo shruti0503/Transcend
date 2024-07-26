@@ -9,8 +9,6 @@ This project is a full-stack web application that includes a login page, a home 
 3. [Backend](#backend)
 4. [Database](#database)
 5. [Deployment](#deployment)
-6. [Installation](#installation)
-7. [Usage](#usage)
    
 ![Screenshot 2024-07-26 at 2 31 09 PM](https://github.com/user-attachments/assets/89674eec-c368-4ebc-8024-de0fa5f706e4)
 
