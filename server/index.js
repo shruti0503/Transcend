@@ -21,9 +21,9 @@ app.use(cors());
 
 app.use('/',DATArouter)
 
-// app.use("/", (req, res) => {
-//   res.json({ message: "Hello Vercel" });
-// });
+app.use("/", (req, res) => {
+  res.json({ message: "This is backend" });
+});
 
 
 connection().then(() => {
