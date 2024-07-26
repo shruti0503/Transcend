@@ -21,9 +21,9 @@ app.use(cors());
 
 // app.use('/',DATArouter)
 
-app.get('/',(req,res)=>{
-  res.json("hello")
-})
+app.use("/", (req, res) => {
+  res.json({ message: "Hello Vercel" });
+});
 
 
 connection().then(() => {
