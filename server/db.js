@@ -12,7 +12,7 @@ const connection = () => {
         return Promise.resolve(); 
     }
 
-    return mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    return mongoose.connect(CONNECTION_URL)
         .then(() => {
             isConnected = true;
             console.log('MongoDB connected');
