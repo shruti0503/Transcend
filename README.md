@@ -30,13 +30,13 @@ This project is a full-stack web application that includes a login page, a home 
 
 ### Deployed URL
 
-Frontend is deployed at: [Frontend URL](https://frontend-url.vercel.app)
+Frontend is deployed at: [Frontend URL](https://transcend-3nem-look-up.vercel.app/)
+Backend is deployed at:  [Backend URL](https://transcend-sigma.vercel.app/)
 
 ### Features
 
 - User login with username and password.
 - Home page with a sidebar.
-- View Data button to display company data in a table.
 - Pagination showing 10 records per page.
 - Sorting and filtering capabilities on table columns.
 - Central search bar for searching across all table columns.
