@@ -62,6 +62,11 @@ body {
   place-self:center;
   min-height: 80vh;
 }
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
 .spin{
   width: 65px;
   height: 65px;
