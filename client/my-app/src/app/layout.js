@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
         </div>
        
         </body>
+        
         </AuthProvider>
         </ClerkProvider>
     </html>
