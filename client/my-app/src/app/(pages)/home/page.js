@@ -10,6 +10,7 @@ const Page = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
   const [sortOption, setSortOption] = useState('');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,9 +18,11 @@ const Page = () => {
         const result = await getInfo();
         setData(result);
         setFilteredData(result);
+        setLoading(false); 
         console.log("data chn", result);
       } catch (error) {
         console.error("Error fetching data in component", error);
+        setLoading(false); 
       }
     };
 
@@ -54,9 +57,15 @@ const Page = () => {
         <div className='w-full flex justify-end items-end'>
           <Seach searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         </div>
-        <div className='w-full mt-5 flex h-[500px]'>
-          <TableComp data={filteredData} setSortOption={setSortOption} />
-        </div>
+        {loading ? (
+          <div className='spinner'>
+            <div className='spin'></div>
+          </div>
+        ) : (
+          <div className='w-full mt-5 flex h-[500px]'>
+            <TableComp data={filteredData} setSortOption={setSortOption} />
+          </div>
+        )}
       </div>
       <p className='text-black'></p>
     </div>
