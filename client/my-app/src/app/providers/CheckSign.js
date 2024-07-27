@@ -11,12 +11,17 @@ export const AuthProvider = ({ children }) => {
   const [authStatus, setAuthStatus] = useState({ isSignedIn, user });
   const router = useRouter();
 
-  useEffect(() => {
-    setAuthStatus({ isSignedIn, user });
-    if (!isSignedIn) {
-      router.push('/sign-up'); 
-    }
-  }, [isSignedIn, user, router]);
+  // useEffect(() => {
+  //   setAuthStatus({ isSignedIn, user });
+  //   if (!isSignedIn) {
+  //     router.push('/sign-up'); 
+  //   }
+  //   else{
+  //     router.push('/sign-in'); 
+
+  //   }
+  //   console.log("sss", isSignedIn)
+  // }, [isSignedIn, user, router]);
 
   return (
     <AuthContext.Provider value={authStatus}>

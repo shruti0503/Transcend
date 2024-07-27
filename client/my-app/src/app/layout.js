@@ -7,6 +7,7 @@ import {
   SignInButton,
   SignedIn,
   SignedOut,
+  RedirectToSignIn,
   UserButton
 } from '@clerk/nextjs'
 import {AuthProvider} from './providers/CheckSign.js'
@@ -22,20 +23,16 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <ClerkProvider>
-        <AuthProvider>
+      
       <body className={inter.className}>
-        {/* <Header />
-        <Sidebar /> */}
-        <div className="flex w-full items-center justify-center h-[100vh]">
-          {children}
-
-        </div>
-       
-        </body>
-        
+        <ClerkProvider>
+        <AuthProvider>
+             {children}      
         </AuthProvider>
         </ClerkProvider>
+       
+        </body>
+       
     </html>
     
   );
